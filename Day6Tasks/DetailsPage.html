@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center ;color: blue; font-family: Arial, Helvetica, sans-serif;
+        }
+        fieldset{
+            text-align: center;
+        }
+        body{
+            background-color: azure;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Please fill the Education  Details</h1>
+    <form action="BtechDetails.html" method="post" enctype="text/plain">
+        <fieldset>
+            <legend>10thDetails</legend>
+
+            <label for="percentage">
+                Percentage:
+            </label>
+           
+            <input type="number" name="Percentage" id="percentage" placeholder="Mention in CGPA">
+            <br>
+
+           <label for="Image">
+            Upload 10thCertificate:
+            <br>
+            <br>
+            <input type="file" name="Image" id="Certificate" accept="Image/*">
+           </label>
+
+        </fieldset>
+        <fieldset>
+            <select name="InterCourse" id="Course">
+                <option value="0"> SelectCouse</option>
+                <option value="1">Mpc</option>
+                <option value="2">Bipc</option>
+                <option value="3">CEC</option>
+            </select>
+           
+            <legend>IntermediateDetails</legend>
+            <label for="Interpercentage">
+                Intermediate:
+            </label>
+           
+            <input type="number" name="Percentage" id="Interpercentage" placeholder="Mention in CGPA">
+        
+            <br>
+           
+           <label for="Image">
+
+            Upload IntermediatethCertificate:
+            <br>
+            <br>
+            <input type="file" name="Image" id="InterCertificate" accept="Image/*">
+           
+           </label>
+           <br>
+           <br>
+           <fieldset>
+            <legend>
+                Select Btech Branches
+            </legend>
+            <input type="radio" name="Btech" value="Cse">CSE
+            <input type="radio" name="Btech" value="Ece">ECE
+            <input type="radio" name="Btech" value="Civil">Civil
+            <input type="radio" name="Btech" value="EEE">EEE
+            <input type="radio" name="Btech" value="IT">IT
+           
+        </fieldset>
+        <br>
+        <br>
+
+        <fieldset>
+            <legend>Select Institute Location</legend>
+            <select name="Location" id="Location" required>
+                <option value="Location">Select Location</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Guntur">Guntur</option>
+                <option value="Tenali">Tenali</option>
+                <option value="Repalle">Repalle</option>
+            </select>
+        </fieldset>
+        <br>
+        <br>
+        <button type="submit"><a href="BtechDetails.html">Submit</a></button>
+        <button type="reset"> Reset</button>
+      
+          
+
+        </fieldset>
+      
+        
+       
+     
+    </form>
+</body>
+</html>
